@@ -1,0 +1,85 @@
+{
+  "name": "notas-vue",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "node scripts/gh-pages-deploy.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "execa": "^1.0.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^12.0.0",
+    "vue-generate-component": "^3.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/html-indent": [
+        "warn",
+        4
+      ],
+      "vue/component-name-in-template-casing": [
+        "warn",
+        "PascalCase"
+      ],
+      "vue/no-reserved-component-names": [
+        "error"
+      ],
+      "vue/padding-line-between-blocks": [
+        "warn",
+        "always"
+      ],
+      "vue/require-direct-export": [
+        "error"
+      ],
+      "vue/require-name-property": [
+        "error"
+      ],
+      "vue/script-indent": [
+        "warn",
+        4,
+        {
+          "switchCase": 1
+        }
+      ],
+      "vue/v-on-function-call": [
+        "error"
+      ],
+      "quotes": [
+        "warn",
+        "double"
+      ]
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
