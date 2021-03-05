@@ -11,3 +11,5 @@ Ver en servidor
 ```
 npm run serve
 ```
+## Versión en producción
+https://michaelburri.github.io/NotasVue/
